@@ -21,7 +21,7 @@ def predict(Processor_Speed_GHz, RAM_GB, Storage_GB, Battery_mAh, Display_Tech, 
                                 Brand_Score, Release_Year, Initial_Price_USD,
                                 Customer_Rating]])
 
-        prediction = model_cla.predict(input_scaled)[0]
+        prediction = model_cla.predict(input_data)[0]
 
         return label_map.get(prediction, "Unknown")
 
